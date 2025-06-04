@@ -2,10 +2,10 @@
 #lvl2csc
 
 current_points = 0#setting up a points system and makeing it 0
-Questions_left = 4
+Questions_left = 4#setting up the ammount of questions left value
 
-def Print_points():
-    print("Current points:", current_points, "you have",Questions_left, "questions left")#prints the current points for the user
+def Print_points():#defineing 
+    print("Current points:", current_points, "you have",Questions_left, "questions left")#prints the users points and tells them how much questions are left
 
 
 
@@ -46,7 +46,7 @@ elif question_1 == "4":#if question 1s answer is 4 then
 else:#any other input 
     print("Invalid input.")#prints invalid input
 
-Questions_left += -1
+Questions_left += -1#questions go down by one
 Print_points()
 
 print(" ")#makes it look easyer to read by separating the parts
@@ -70,7 +70,7 @@ elif question_2 == "3":#if question 2s answer is 3 then
 else:#any other input
     print("Invalid input.")# prints invalid input
 
-Questions_left += -1
+Questions_left += -1#questions go down by one
 Print_points()
 
 print(" ")#makes it look easyer to read by separating the parts
@@ -97,7 +97,7 @@ elif question_3 == "4":#if question 3s answer is 4 then
 else:#any other input
     print("Invalid input.")#prints invalid input
 
-Questions_left += -1
+Questions_left += -1#questions go down by one
 Print_points()
 
 
@@ -184,7 +184,7 @@ print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 
-Questions_left += -1
+
 if current_points < 0:#if they got lower than 0 then
     print("You got", current_points, "Which is quite low, try again to get a better score!")#prints that they got a low score and should try again
 elif current_points > 0 and current_points < 100:#if they got between 0 and 100 then
