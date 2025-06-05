@@ -4,7 +4,7 @@
 current_points = 0#setting up a points system and makeing it 0
 Questions_left = 4#setting up the ammount of questions left value
 
-def Print_points():#defineing 
+def Print_points():#making a function
     print("Current points:", current_points, "you have",Questions_left, "questions left")#prints the users points and tells them how much questions are left
 
 
@@ -20,9 +20,6 @@ print("A good answer would give a postitive number like 20 points ")
 print ("But a bad one will give you a negative number like -30 points")
 print("You can also get zero points.")#how game works
 print(" at the end you can see how much points you have to see how well you did.")#how game works
-
-
-
 
 
 
@@ -47,7 +44,7 @@ else:#any other input
     print("Invalid input.")#prints invalid input
 
 Questions_left += -1#questions go down by one
-Print_points()
+Print_points()#printing points
 
 print(" ")#makes it look easyer to read by separating the parts
 print(" ")#makes it look easyer to read by separating the parts
@@ -71,7 +68,7 @@ else:#any other input
     print("Invalid input.")# prints invalid input
 
 Questions_left += -1#questions go down by one
-Print_points()
+Print_points()#printing points
 
 print(" ")#makes it look easyer to read by separating the parts
 print(" ")#makes it look easyer to read by separating the parts
@@ -98,18 +95,17 @@ else:#any other input
     print("Invalid input.")#prints invalid input
 
 Questions_left += -1#questions go down by one
-Print_points()
-
+Print_points()#printing points
 
 
 
 print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
+
 
 
 print("       Question 4 (bonus!)")#question 4(bonus)
-
 print("You are feeling hungry where do you go?")#info
 print("  1. Ice cream stand")#choice 1
 print("  2. Pizza shop")#choice 2
@@ -128,7 +124,7 @@ if question_4 == "1":#if question_4s answer is 1 then
         print("")#makes it look easyer to read by separating the parts
         print("You buy the ice cream and as you leave you hear him crying")#info of what happens after
         current_points += -2#points go down by 2
-    elif question_4_1 == "2":
+    elif question_4_1 == "2":#if they chose option 2 then
         print("")#makes it look easyer to read by separating the parts
         print("")#makes it look easyer to read by separating the parts
         print("He tells you that hes feeling down because he lost his job do you...")#info
@@ -184,10 +180,10 @@ print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 
-
+print("test")
 if current_points < 0:#if they got lower than 0 then
     print("You got", current_points, "Which is quite low, try again to get a better score!")#prints that they got a low score and should try again
-elif current_points > 0 and current_points < 100:#if they got between 0 and 100 then
+elif current_points > 0 and current_points < 130:#if they got between 0 and 144 then
     print("You got", current_points, "Not bad but i think you can do better try again!")#print that they got a decent score but they should try again 
-elif current_points > 144:#if they got over 100 then print
+elif current_points > 130:#if they got over 130 then print
     print("You got the best posible score good job!") #tell them they got the best score they could get and they did a good job
