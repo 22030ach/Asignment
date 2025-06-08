@@ -5,7 +5,7 @@ current_points = 0#setting up a points system and makeing it 0
 Questions_left = 4#setting up the ammount of questions left value
 
 def Print_points():#making a function
-    print("Current points:", current_points, "you have",Questions_left, "questions left")#prints the users points and tells them how much questions are left
+    print("Current points:", current_points,)#prints the users points and tells them how much questions are left
 
 
 
@@ -20,15 +20,27 @@ print("A good answer would give a postitive number like 20 points ")
 print ("But a bad one will give you a negative number like -30 points")
 print("You can also get zero points.")#how game works
 print(" at the end you can see how much points you have to see how well you did.")#how game works
+print("this game is made for people from the ages of 10 to 50")
+print("")
 
 
+age = int(input("how old are you "))
+if age >50:
+    print("sorry your too old to play this game")
+    exit()
+elif age <10:
+    print("sorry your too young to play this game")
+    exit()
 
+print("now we know your in the right age group for this game lets start")
+print("")
 print("       Question 1")#question 1
 print("You wake up, it is the weekend Do you:") #info
 print("  1. Go hang out with friends.")#choice 1
 print("  2. Stay inside and play video games")#choice 2
 print("  3. Take a walk")#choice 3
 print("  4. Go back to bed")#choice 4
+
 
 question_1 = input("Enter one of these choices (1, 2, 3, 4): ")#getting the imput from the user
 
@@ -180,7 +192,6 @@ print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 print("")#makes it look easyer to read by separating the parts
 
-print("test")
 if current_points < 0:#if they got lower than 0 then
     print("You got", current_points, "Which is quite low, try again to get a better score!")#prints that they got a low score and should try again
 elif current_points > 0 and current_points < 130:#if they got between 0 and 144 then
