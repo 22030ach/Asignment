@@ -118,10 +118,10 @@ def final_points():#function for displying the final points
     elif current_points >= 100:#if they got over 100 then
         easygui.msgbox(f"You got {current_points}. The best possible score, good job!")#tell them they got the best score possible
 
-def loop_game():  # function for looping the game
+def loop_game():
     global current_points
     while True:
-        current_points = 0  # Reset score at the start of each game
+        current_points = 0
         intro()
         question_1()
         question_2()
@@ -131,14 +131,11 @@ def loop_game():  # function for looping the game
 
         play_again = easygui.buttonbox("Do you want to play again?", choices=["Yes", "No"])
         if play_again == "No":
-            easygui.msgbox("Thanks for playing")
-            break  # Exit the loop cleanly
+            easygui.msgbox("Thanks for playing!")
+            break
 
-#run the game
-intro()#play the intro
-question_1()#starts question 1
-question_2()#starts question 2
-question_3()#starts question 3
-question_4()#starts question 4
-final_points()#prints final points
-loop_game()#asks if they want to play again
+if easygui.buttonbox("Do you want to play the game?", choices=["Yes", "No"]) == "Yes":
+    loop_game()
+else:
+    exit()
+
