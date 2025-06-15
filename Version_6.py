@@ -113,9 +113,9 @@ def question_4():#function for question 4
 def final_points():#function for displying the final points
     if current_points < 0:#if they get less than 0 points then 
         easygui.msgbox(f"You got {current_points}. Which is quite low, try again to get a better score!")#tell them its a low score and to try again
-    elif 0 <= current_points < 100:#if they got in between 0 and 100 then 
+    elif 0 <= current_points < 140:#if they got in between 0 and 140 then 
         easygui.msgbox(f"You got {current_points}. Not bad but I think you can do better, try again!")#tell them they did good but to try again
-    elif current_points >= 100:#if they got over 100 then
+    elif current_points >= 140:#if they got over 140 then
         easygui.msgbox(f"You got {current_points}. The best possible score, good job!")#tell them they got the best score possible
 
 def loop_game():
